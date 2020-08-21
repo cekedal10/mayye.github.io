@@ -1,218 +1,283 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>PALA COFFE</title>
 	<meta charset="utf-8">
-	<title>RK Cushion</title>
-<style type="text/css">
-	header{
-	background-color: grey;
-	height: 55px;
-	width: 99%;
-	border-radius: 0px;
-    background-color: rgba(34, 49, 52, 0.9);
-    position :fixed;
-    top: 0;
-    z-index: 10
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive3.css">
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Aladin&family=Alata&family=Lemonada:wght@500&family=Marck+Script&display=swap" rel="stylesheet">
+	<style type ="text/css">
+	*{	
+	margin: 0px;
+	padding: 0px;
 }
-header ul{
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("kedai.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: auto;
+}
+ul{
+	list-style-type: none;
 	float: right;
+	margin-top: 15px;
 }
-header ul li{
+ul li{
 	display: inline-block;
 }
-header ul li a{
+ul li a{
 	color: white;
+	padding: 5px 13px;
+	border: 1px solid transparent;
+	transition: 0,6s;
+	font-family: 'acme', sans-serif;
+	font-size: 23px;
 	text-decoration: none;
-	padding: 6px;
-	font-family: "calibri",monotype;
-	border: 7px solid transparent;
-	border-radius: 13px;
-	transition: 0.3s;
-	font-size: 20px;
 	font-weight: bold;
-}	
+	border-radius: 10px;
+
+}
 ul li a:hover{
-	background-color: black;
-	color: white;
-	}
+	background-color: white;
+	color: black;
+}	
 ul li .active{
-	background-color: black;
+	background-color: white;
 	color: black;
 }
-/*main img{
-	height: 700px;
-    width: 1570px;
-}*/
-.icon img{
-    height: 300px;
-    width: 300px;
-    padding-top: 100
+.menu-icon{
+    display: none;
 }
-main img{
-	height: 700px;
-    width: 100%;
-    border-bottom: 10px solid black;
-    padding-bottom: 4px;
+.main{
+	max-width: auto;
+	margin: auto;
 }
-h1{
+.title{
+	position: absolute;
+	top:  50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    padding-top: 20px;
+
+}
+.title h1{
+    padding-top: 80px;
+	color: white;
+	font-size: 67px;
+	font-family: 'alata', cursive;
 	text-align: center;
-	font-family: "gill sans mt",monotype;
-	margin-top: 93px;
-    font-size: 45px;
-
+	letter-spacing: 2px;
+	font-weight: bold;
 }
-.gambar img{
-    height: 350px;
-    padding-left: 0px;
-    border-radius: 50px;
-    border: 30px solid transparent;
-    
+.tap img{
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
-.gambar p{
-    margin-left: 350px;
-    margin-right: 300px;
-    font-size: 20px;
-    font-family: cambria;    
-}
-footer{
-    background-color: grey;
-    height: 160px;
-    font-size: 19px;
-    font-family: cambria;
+.tap p{
+    font-size: 35px;
     text-align: center;
+    color: black;
+    font-family: 'lemonada', sans-serif;
+    letter-spacing: 2px;
 }
-footer .media img{
-    width: 50px;
-    padding-left: 680px;
-}
-footer .media p{
-    margin-right: 650px;
-    padding-top: 15px;
+
+.contact-details {
+	color: white;
+	position: absolute;
+	float:left;
+	margin: auto;
+	padding: auto;
 
 }
-@media (max-width: 1000px){
-        
+/*.container{
+	width: 900px;
+	height: auto;
+	margin: auto;
+	position: absolute;
+
+}
+*/
+.contact-details img {
+	width: 45px;
+	height: 45px;
+	border-radius: 35px;
+	margin: 10%;
+	position: all;
+	float: left;
+	margin-bottom: 10px;
+
+}
+.logo img{
+    margin: 10px 5px;
+	width: 190px;
+	position: absolute;
+	height: 200px;
+	float: left;
+	border-radius: 30px;
+	border: 3px solid;
+	border-color: white;
+
+}
+footer img{
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+	margin-top: 89.4vh;
+	border-radius: 40px;
+}
+@media(max-width: 1001px){
+
+}
+@media screen and (max-width: 1000px){
+	ul{
+	margin-top: 20px;
+}
+ul li a{
+	padding: 3px 7px;
+	border: 1px solid transparent;
+	transition: 0,8s;
+	font-size: 17px;
+	border-radius: 14px;
+}
+	.title h1{
+		font-size: 55px;
+		letter-spacing: 3px;
+		text-decoration: none;
+	}
+	footer img{
+	width: 60px;
+	height: 60px;
+	margin-top: 72%;
+    padding: 4px;
+	}
+	.logo img{
+	width: 150px;
+	height: 150px;
+	border-radius: 35px;
+	border: 2px solid;
+	border-color: white;
+	margin-top:10px;
+	margin-left: 4px;
+}
 }
 @media screen and (max-width: 900px){
-		main img{
-			width: 100%;
-			height: 400px;
-		}
+    .title h1{
+        font-size: 50px;
         
-}
-@media (max-width: 800px){
-
+    }
+    .tap img{
+        height: 150px;
+        margin-top: 19px;
+        border-radius: 40px;
+    }
+    footer img{
+        margin-top: 90vh;
         
+    }
+    .logo img{
+        border-radius: 20px;
+        height: 190px;
+        width: 160px;
+    }
 }
 @media (max-width: 700px){
-    main img{
-        height: 350px;
+    header{
+        background-position: -20px;
     }
-    header ul li a{
-        font-size: 17px;
-    }
-    h1{
-        font-size: 40px;
-        margin-top: 70px;
-        padding-left: 20px;
-    }
-    footer .contact{
-        font-size: 16px;
-    }
-    footer .media img{
-    width: 40px;
-    display: block;
-    padding-left: 220px;
-}
-    footer .media p{
-    margin-right: 200px;
-    padding-top: 10px;
-    font-size: 16px;
-}
-    footer{
-        height: 125px;
-    }
-}
-@media (max-width: 600px){
-    main img{
-        height: 250px;
-    }
-    header ul li a{
-        font-size: 17px;
-    }
-    h1{
+    .title h1{
         font-size: 35px;
-        margin-top: 70px;
-        padding-left: 20px;
+        margin-top: 0px;
     }
-    footer .contact{
-        font-size: 16px;
+    .tap img{
+        height: 140px;
     }
-    footer .media img{
-    width: 40px;
-    display: block;
-    padding-left: 150px;
+    .tap p{
+        font-size: 28px;
+    }
 }
-    footer .media p{
-    margin-right: 170px;
-    padding-top: 10px;
-    font-size: 16px;
+@media(max-width: 600px){
+	ul li a{
+	padding: 1px 6px;
+	border: 1px solid transparent;
+	transition: 0,8s;
+	font-size: 16px;
+	border-radius: 14px;
 }
+	.title h1{
+		font-size: 40px;
+		letter-spacing: 1px;
+        padding-top: 70px;
+	}
+	footer img{
+	width: 32px;
+	height: 38px;
+    margin-top: 91.8vh;
+	display: inline-block;
+
+	}
+	.logo img{
+	width: 104px;
+	height: 150px;
+	border-radius: 10px;
+	border: 2.3px solid;
+	border-color: white;
+	margin-top:10px;
+	margin-left: 4px;
+    }
+    .tap img{
+        height: 100px;
+    }
+    .tap p{
+        font-size: 22px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    header{
+        background-position: -140px;
+    }
+}
+@media (max-width: 500px){
     footer{
-        height: 125px;
-    }
+        padding: 2px;
 }
-@media (max-width: 500px)
-{
-    main img{
-        height: 300px;
-    }
-    header ul li a{
-        font-size: 17px;
-    }
-    h1{
-        font-size: 35px;
-        margin-top: 70px;
-        padding-left: 20px;
-    }
-    footer .contact{
-        font-size: 16px;
-    }
-    footer .media img{
-    width: 40px;
-    padding-left: 150px;
-}
-    footer .media p{
-    margin-right: 150px;
-    padding-top: 10px;
-    font-size: 16px;
-}
-    footer{
-        height: 130px;
-    }
-}
-       </style>
-</style>
+
+
+
+
+	</style>
 </head>
-<header>
-	<div class="header-right">
-		<ul>
-			<li><a href="rk.html">BERANDA</a></li>
-			<li><a href="#">DAFTAR PRODUK</a></li>
-			<li><a href="#">TENTANG</a></li>
-		</ul>
-	</div>
-</header>
-	<h1>SELAMAT DATANG DI WEB KAMI</h1>
-<main>
-    <img src="backafforneojaya1.jpg">
-</main>
-<footer>
-    <div class="contact">
-       Hubungi Kami Untuk Informasi lebih lanjut
+<body>
+	<header>
+<div class="header-list">
+	<ul>
+	<li><a href="PALACOFFE.html" class="active">HOME</a></li>
+	<li><a href="SEJARAH.html">SEJARAH</a></li>
+	<li><a href="PROFIL.html">PROFIL</a></li>
+	<li><a href="LOKASI.html">LOKASI</a></li>
+	</ul>
+</div>
+	<div class="logo"><img src="logo.jpg">
+</div>
+
+<div class="title">	
+	<h1>SELAMAT DATANG DI WEB PALA COFFE</h1>
+<div class="tap">
+    <a href="SEJARAH.html"><img src="finger-tap-1493506-1264180.png"/></a>
+    <p>TAP TO CONTINUE</p>
     </div>
-    <div class="media">
-       <a href="https://api.whatsapp.com/send?phone=+6282275420120"><img src="whatsapp-icon-logo-8CA4FB831E-seeklogo.jpg" style="float: left"/></a><p>085373921089</p>
-       <a href="http://www.instagram.com/sitinurhaliza684"/><img src="instagram_logo.jpg" style="float: left"/></a><p>@sitii_nurhalieza</p>
-    </div></footer>
+</div>
+<footer>
+	<div class="footer">
+        <span class="ig"><a href="http://www.instagram.com/pala.coffee/"><img src="instagram_logo.jpg"></a></span>
+        <span class="fb"><a href="http://www.facebook.com/palacoffee.id/"><img src="facebook_logos_PNG19751.jpg"></a></span>
+        <span class="wa"><a href="https://api.whatsapp.com/send?phone=+6287897973079"><img src="whatsapp-icon-logo-8CA4FB831E-seeklogo.jpg"></a></span>
+	</div>
+</footer>
+</header>
+</body>
 </html>
