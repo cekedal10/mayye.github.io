@@ -6,14 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style2.css">
 	<link rel="stylesheet" type="text/css" href="responsive4.css">
+    	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Aladin&family=Alata&family=Lemonada:wght@500&family=Marck+Script&display=swap" rel="stylesheet">
 	<style type="text/css">
-		*{
+	*{	
 	margin: 0px;
 	padding: 0px;
 }
 header{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("barang.jpg");
-	height: 100vh;
+	background-color: darkgoldenrod;
+	height: 60px;
 	background-size: cover;
 	background-position: auto;
 }
@@ -27,14 +28,15 @@ ul li{
 }
 ul li a{
 	color: white;
-	padding: 5px 13px;
+	padding: 5px 11px;
 	border: 1px solid transparent;
 	transition: 0,6s;
-	font-family: rockwell;
-	font-size: 19px;
+	font-family: 'acme', sans-serif;
+	font-size: 23px;
 	text-decoration: none;
 	font-weight: bold;
 	border-radius: 10px;
+
 }
 ul li a:hover{
 	background-color: white;
@@ -44,32 +46,37 @@ ul li .active{
 	background-color: white;
 	color: black;
 }
-.main{
-	max-width: auto;
-	margin: auto;
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("");
+	height: 100vh;
+	background-size: cover;
+	background-position: auto;
 }
 .logo img{
-	width: 190px;
-	position: absolute;
+    margin-top: -55px;
+    margin-left: 5px;
+	width: 180px;
 	height: 200px;
 	float: left;
-	border-radius: 50px;
-	border: 3px solid;
-	border-color: white;}
+	border-radius: 20px;
+	border: 5px solid white;
+}
 .wrapper{
 	position: right;
-	color: white;
-	margin: 20px auto 20px auto;
-	width: 940px;
-	padding: 40px;
+	color: ghostwhite;
+	margin: auto;
+	width: 1000px;
+	padding-top: 9px;
 }
 .wrapper h1{
 	text-align: center;
 	text-decoration: underline;
-	padding: 7px;
+	padding-bottom: 10px;
+    font-family: 'acme', cursive;
 }
 .wrapper dd{
-	padding: 5px;
+    font-family: 'alata',cursive;
+    font-size: 16px;
 }
 @media(max-width: 1000px){
 	ul li a{
@@ -132,25 +139,94 @@ ul li .active{
 	text-align: center;
 }
 }
-
+@media (max-width: 400px){
+    header{
+        height: 39.1px;
+    }
+ul{
+	margin-top: 9px;
+}
+ul li{
+	display: inline-block;
+    margin-left: 12.6px;
+}
+ul li a{
+	padding: 2px 7px;
+	border: 3px solid transparent;
+	transition: 0,9s;
+	font-family: 'acme', sans-serif;
+	font-size: 17px;
+}
+    .logo img{
+        height: 80px;
+        width: 70px;
+        border-radius: 10px;
+    }
+    .wrapper{
+        padding-top: 15px;
+        margin-left: 10px;
+        text-align: 
+        
+    }
+    .wrapper h1{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .wrapper dd{
+        font-size: 11px;
+        width: 265px;
+    }
+}
 	</style>
 </head>
 <header>
-	<div class="main">
-	<div class="logo"><img src="logo.jpg"></div>
 	<ul>
-	<li><a href="PALACOFFE.html">HOME</a></li>
-	<li><a href="SEJARAH.html" class="active">SEJARAH</a></li>
-	<li><a href="LOKASI.html">LOKASI</a></li>
-	<li><a href="KONTAK.html">KONTAK</a></li>
-	</ul>
-</div>
-<div class="wrapper">
-	<h1>PALA COFFE ACEH</h1>
-	<p><dd>Kupi Pala Atau Biasa disebut Pala Coffe,merupakan salah satu minuman yang wajib dicoba saat Berkunjung Ke Provinsi Aceh</p></dd>
-</div>
-
+	<li>
+        <a href="PALACOFFE.html">HOME</a></li>
+	<li>
+        <a href="SEJARAH.html" class="active">SEJARAH</a></li>
+	<li>
+        <a href="LOKASI.html">LOKASI</a></li>
+	<li>
+        <a href="KONTAK.html">KONTAK</a></li>
+        </ul>
 </header>
 <body>
+    <div class="logo">
+        <img src="logo.jpg"></div>
+<div class="wrapper">
+	<h1>PALA COFFE ACEH</h1>
+	<p><dd>Kupi Pala Atau Biasa disebut Pala Coffe,merupakan salah satu minuman yang wajib dicoba saat Berkunjung Ke Provinsi Aceh</p>
+	<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+	<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+	<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+</div>
 </body>
 </html>
